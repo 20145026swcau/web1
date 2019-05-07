@@ -1,0 +1,59 @@
+<!doctype html>
+
+
+
+<head>
+  <title>css</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+<h1>CSS</h1>
+  Adjacent sibling selectors let us style an element only if preceded by a specific element. We do so using the + operator:
+<p>
+  Example:
+
+  p + span {
+    color: yellow;
+  }
+</p>
+  This will assign the color yellow to all span elements preceded by a p element:
+
+  <p>This is a paragraph</p>
+  <span>This is a yellow span</span>
+  We have a lot more selectors we can use:
+  <p>
+  <oi>
+    <li>attribute selectors</li>
+    <li>pseudo class selectors</li>
+    <li>pseudo element selectors</li>
+  We’ll find all about them in the next sections.
+</oi>
+</p>
+
+<img src="cascade.jpg" width="20%"><br>
+  CASCADE
+  <strong><u>Cascade</u> is a fundamental concept of CSS</strong>. After all, it’s in the name itself, the first C of CSS — Cascading Style Sheets — it must be an important thing.
+  <br>
+  What does it mean?
+  <p>
+  Cascade is the process, or algorithm, that determines the properties applied to each element on the page. Trying to converge from a list of CSS rules that are defined in various places.
+
+
+  It does so taking in consideration:
+</p>  <p>
+  specificity
+  importance
+  inheritance
+  order in the file
+  It also takes care of resolving conflicts.
+</p>
+  Two or more competing <strong><u>CSS</u></strong> rules for the same property applied to the same element need to be elaborated according to the CSS spec, to determine which one needs to be applied.
+
+  Even if you just have one <strong><u>CSS</u></strong> file loaded by your page, there is other CSS that is going to be part of the process. We have the browser (user agent) CSS. Browsers come with a default set of rules, all different between browsers.
+
+  Then your CSS comes into play.
+
+  Then the browser applies any user stylesheet, which might also be applied by browser extensions.
+
+</body>
